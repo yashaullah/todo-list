@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMart - To-Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="logo" href="#">TaskMart<span>.</span></a>
+      <a class="back" href="../index.html">All projects</a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="heading">My <span>To-Do List</span></h1>
+
+    <div class="card todo-card">
+      <div class="card-inner">
+        <div class="add-row">
+          <input type="text" id="taskInput" placeholder="What do you need to do?" maxlength="80">
+          <button id="addBtn" class="add-btn">Add task</button>
+        </div>
+        <p id="error"></p>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="active">Pending</button>
+          <button class="filter" data-filter="done">Done</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="bottom-row">
+          <span id="count"></span>
+          <button id="clearDone" class="clear-btn">Clear done tasks</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>Web Technologies project – HTML, CSS and JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
